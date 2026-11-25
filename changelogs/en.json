@@ -1,6 +1,21 @@
 {
   "releases": [
     {
+      "version": "1.5.0",
+      "build": 9,
+      "date": "2026-11-25",
+      "notes": [
+        "Redrawn samurai: every stance with new poses and animation",
+        "A new look for every oni and boss, including the forms of the Lord of Yomi",
+        "All ten worlds with richer ground, decor and ambient life",
+        "Boss altars awaken when you call the boss",
+        "Prompts now appear right over objects in the world",
+        "Reworked sound effects",
+        "The Bestiary, in the Journal",
+        "In-game notices about new versions"
+      ]
+    },
+    {
       "version": "1.4.1",
       "build": 8,
       "date": "2026-11-17",

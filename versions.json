@@ -3,23 +3,131 @@
   "updateCheckEnabled": true,
   "android": {
     "enabled": true,
-    "latestVersion": "1.4.1",
-    "latestBuild": 8,
+    "latestVersion": "1.5.0",
+    "latestBuild": 9,
     "minSupportedBuild": 1,
     "forceUpdateEnabled": false,
     "storeUrl": "https://play.google.com/store/apps/details?id=com.oniborn.app",
     "releaseNotes": {
       "en": [
-        "Clearer hints for touch controls",
-        "The run summary is no longer cut off on small screens",
-        "Achievements and the Sensei no longer speak over each other",
-        "The game fills the whole screen, edge to edge"
+        "Redrawn samurai: every stance with new poses and animation",
+        "A new look for every oni and boss, including the forms of the Lord of Yomi",
+        "All ten worlds with richer ground, decor and ambient life",
+        "Boss altars awaken when you call the boss",
+        "Prompts now appear right over objects in the world",
+        "Reworked sound effects",
+        "The Bestiary, in the Journal",
+        "In-game notices about new versions"
+      ],
+      "de": [
+        "Neu gezeichnete Samurai: jede Haltung mit neuen Posen und Animationen",
+        "Neues Aussehen für alle Oni und Bosse, auch die Gestalten des Herrn von Yomi",
+        "Alle zehn Welten mit reicherem Boden, Dekor und Leben",
+        "Boss-Altäre erwachen, wenn du den Boss rufst",
+        "Hinweise erscheinen direkt über den Objekten der Welt",
+        "Überarbeitete Soundeffekte",
+        "Das Bestiarium im Tagebuch",
+        "Hinweise auf neue Versionen im Spiel"
+      ],
+      "es": [
+        "Samuráis redibujados: cada postura con nuevas poses y animaciones",
+        "Nuevo aspecto para todos los oni y jefes, incluidas las formas del Señor de Yomi",
+        "Los diez mundos con suelos, decorados y vida más ricos",
+        "Los altares despiertan al invocar al jefe",
+        "Los avisos aparecen sobre los objetos del mundo",
+        "Efectos de sonido renovados",
+        "El Bestiario, en el Diario",
+        "Avisos de nuevas versiones en el juego"
+      ],
+      "fr": [
+        "Samouraïs redessinés : chaque posture avec de nouvelles poses et animations",
+        "Nouveau look pour tous les oni et boss, dont les formes du Seigneur de Yomi",
+        "Les dix mondes avec un sol, un décor et une vie plus riches",
+        "Les autels s'éveillent quand vous appelez le boss",
+        "Les indications s'affichent au-dessus des objets du monde",
+        "Effets sonores retravaillés",
+        "Le Bestiaire, dans le Journal",
+        "Avis de nouvelles versions dans le jeu"
+      ],
+      "it": [
+        "Samurai ridisegnati: ogni postura con nuove pose e animazioni",
+        "Nuovo aspetto per tutti gli oni e i boss, comprese le forme del Signore di Yomi",
+        "Tutti e dieci i mondi con terreno, decorazioni e vita più ricchi",
+        "Gli altari si risvegliano quando evochi il boss",
+        "Le indicazioni appaiono sopra gli oggetti del mondo",
+        "Effetti sonori rinnovati",
+        "Il Bestiario, nel Diario",
+        "Avvisi delle nuove versioni nel gioco"
+      ],
+      "ja": [
+        "侍を描き直し：すべての構えに新しいポーズとアニメーション",
+        "すべての鬼とボスを一新、黄泉の王の各形態も",
+        "十の世界すべての地面、装飾、生き物をより豊かに",
+        "ボスを呼ぶと祭壇が目覚める",
+        "案内が世界の物の真上に表示されるように",
+        "効果音を作り直し",
+        "手記に妖怪図鑑を追加",
+        "新しいバージョンをゲーム内でお知らせ"
+      ],
+      "nl": [
+        "Opnieuw getekende samoerai: elke houding met nieuwe poses en animaties",
+        "Een nieuw uiterlijk voor alle oni en eindbazen, ook de gedaanten van de Heer van Yomi",
+        "Alle tien werelden met rijkere grond, decor en leven",
+        "Altaren ontwaken wanneer je de eindbaas oproept",
+        "Aanwijzingen verschijnen boven de objecten in de wereld",
+        "Vernieuwde geluidseffecten",
+        "Het Bestiarium, in het Dagboek",
+        "Meldingen over nieuwe versies in het spel"
+      ],
+      "pl": [
+        "Przerysowani samuraje: każda postawa z nowymi pozami i animacjami",
+        "Nowy wygląd wszystkich oni i bossów, także postaci Władcy Yomi",
+        "Wszystkie dziesięć światów z bogatszym podłożem, dekoracjami i życiem",
+        "Ołtarze budzą się, gdy wzywasz bossa",
+        "Podpowiedzi pojawiają się nad obiektami w świecie",
+        "Nowe efekty dźwiękowe",
+        "Bestiariusz w Dzienniku",
+        "Powiadomienia o nowych wersjach w grze"
+      ],
+      "pt": [
+        "Samurais redesenhados: cada postura com novas poses e animações",
+        "Novo visual para todos os oni e chefes, incluindo as formas do Senhor de Yomi",
+        "Os dez mundos com chão, cenário e vida mais ricos",
+        "Os altares despertam quando você invoca o chefe",
+        "As indicações aparecem sobre os objetos do mundo",
+        "Efeitos sonoros refeitos",
+        "O Bestiário, no Diário",
+        "Avisos de novas versões no jogo"
       ],
       "ru": [
-        "Понятнее подсказки сенсорного управления",
-        "Итоги забега больше не обрезаются на маленьких экранах",
-        "Достижения и Сэнсэй больше не перебивают друг друга",
-        "Игра занимает весь экран, от края до края"
+        "Перерисованы самураи: у каждой стойки новые позы и анимация",
+        "Новый облик всех они и боссов, включая формы Владыки Ёми",
+        "Все десять миров с более богатой землёй, декором и жизнью",
+        "Алтари оживают, когда вы призываете босса",
+        "Подсказки появляются прямо над объектами в мире",
+        "Переработаны звуковые эффекты",
+        "Бестиарий в Журнале",
+        "Уведомления о новых версиях в игре"
+      ],
+      "tr": [
+        "Yeniden çizilen samuraylar: her duruş yeni pozlar ve animasyonlarla",
+        "Tüm oni ve bosslara yeni görünüm, Yomi Efendisi'nin biçimleri de dahil",
+        "On dünyanın tümü daha zengin zemin, dekor ve canlılıkla",
+        "Boss'u çağırdığında sunaklar uyanır",
+        "İpuçları artık dünyadaki nesnelerin hemen üstünde",
+        "Yenilenen ses efektleri",
+        "Günce'de Canavar Kitabı",
+        "Yeni sürümler için oyun içi bildirimler"
+      ],
+      "uk": [
+        "Перемальовано самураїв: кожна стійка з новими позами й анімацією",
+        "Новий вигляд усіх оні та босів, зокрема форм Володаря Йомі",
+        "Усі десять світів із багатшою землею, декором і життям",
+        "Вівтарі оживають, коли ви кличете боса",
+        "Підказки з'являються просто над об'єктами у світі",
+        "Перероблені звукові ефекти",
+        "Бестіарій у Журналі",
+        "Сповіщення про нові версії в грі"
       ]
     }
   },
