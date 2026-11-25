@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "updateCheckEnabled": true,
+  "android": {
+    "enabled": true,
+    "latestVersion": "1.4.1",
+    "latestBuild": 8,
+    "minSupportedBuild": 1,
+    "forceUpdateEnabled": false,
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.oniborn.app",
+    "releaseNotes": {
+      "en": [
+        "Clearer hints for touch controls",
+        "The run summary is no longer cut off on small screens",
+        "Achievements and the Sensei no longer speak over each other",
+        "The game fills the whole screen, edge to edge"
+      ],
+      "ru": [
+        "Понятнее подсказки сенсорного управления",
+        "Итоги забега больше не обрезаются на маленьких экранах",
+        "Достижения и Сэнсэй больше не перебивают друг друга",
+        "Игра занимает весь экран, от края до края"
+      ]
+    }
+  },
+  "ios": {
+    "enabled": false,
+    "latestVersion": "1.4.1",
+    "latestBuild": 8,
+    "minSupportedBuild": 1,
+    "forceUpdateEnabled": false,
+    "storeUrl": null,
+    "releaseNotes": {}
+  },
+  "settings": {
+    "reminderIntervalHours": 24,
+    "checkIntervalHours": 6,
+    "requestTimeoutSeconds": 5,
+    "maxCacheAgeHours": 24
+  }
+}

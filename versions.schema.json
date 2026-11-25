@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/oniborn-config/versions.schema.json",
+  "title": "ONIBORN update configuration",
+  "description": "What versions.json may hold. Unknown fields are allowed so that later fields never break older clients; rules a schema cannot express (minSupportedBuild <= latestBuild, release-note languages) are checked by scripts/validate.py.",
+  "type": "object",
+  "required": ["schemaVersion", "updateCheckEnabled"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updateCheckEnabled": {
+      "type": "boolean",
+      "description": "The global kill switch: false hides every update notification and lifts every requirement."
+    },
+    "android": { "$ref": "#/$defs/android" },
+    "ios": { "$ref": "#/$defs/ios" },
+    "settings": { "$ref": "#/$defs/settings" }
+  },
+  "$defs": {
+    "build": { "type": "integer", "minimum": 1, "maximum": 2100000000 },
+    "version": { "type": "string", "pattern": "^[0-9]{1,5}\\.[0-9]{1,5}\\.[0-9]{1,5}$" },
+    "releaseNotes": {
+      "type": "object",
+      "maxProperties": 40,
+      "propertyNames": { "pattern": "^[A-Za-z]{2,3}([_-][A-Za-z0-9]{2,8}){0,2}$" },
+      "additionalProperties": {
+        "type": "array",
+        "maxItems": 12,
+        "items": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "\\S" }
+      }
+    },
+    "platform": {
+      "type": "object",
+      "required": ["enabled", "latestVersion", "latestBuild", "minSupportedBuild", "forceUpdateEnabled", "storeUrl"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "latestVersion": { "$ref": "#/$defs/version" },
+        "latestBuild": { "$ref": "#/$defs/build" },
+        "minSupportedBuild": { "$ref": "#/$defs/build" },
+        "forceUpdateEnabled": { "type": "boolean" },
+        "releaseNotes": { "$ref": "#/$defs/releaseNotes" }
+      },
+      "if": { "properties": { "enabled": { "const": true } } },
+      "then": { "properties": { "storeUrl": { "type": "string" } } }
+    },
+    "android": {
+      "allOf": [{ "$ref": "#/$defs/platform" }],
+      "properties": {
+        "storeUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https://play\\.google\\.com/store/apps/details\\?id=com\\.oniborn\\.app(&[A-Za-z0-9_=%.-]*)?$"
+        }
+      }
+    },
+    "ios": {
+      "allOf": [{ "$ref": "#/$defs/platform" }],
+      "properties": {
+        "storeUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https://apps\\.apple\\.com/([a-z]{2}/)?app/([^/?#]+/)?id[0-9]{1,12}$"
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "reminderIntervalHours": { "type": "integer", "minimum": 1, "maximum": 720 },
+        "checkIntervalHours": { "type": "integer", "minimum": 1, "maximum": 168 },
+        "requestTimeoutSeconds": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "maxCacheAgeHours": { "type": "integer", "minimum": 1, "maximum": 720 }
+      }
+    }
+  }
+}

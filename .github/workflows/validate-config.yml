@@ -1,0 +1,27 @@
+# Refuses a configuration the game could misread, before GitHub Pages publishes it.
+# Required check: Settings -> Branches -> protect main, require "validate" to pass
+# (see README, "Protecting main").
+name: validate-config
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the schema checker
+        run: pip install "check-jsonschema==0.29.4"
+      - name: Check the shape (JSON Schema)
+        run: check-jsonschema --schemafile versions.schema.json versions.json examples/*.json
+      - name: Check the rules the game applies
+        run: python3 scripts/validate.py versions.json examples/*.json --changelogs changelogs

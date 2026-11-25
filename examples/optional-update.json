@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "updateCheckEnabled": true,
+  "android": {
+    "enabled": true,
+    "latestVersion": "1.5.0",
+    "latestBuild": 9,
+    "minSupportedBuild": 1,
+    "forceUpdateEnabled": false,
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.oniborn.app",
+    "releaseNotes": {
+      "en": [
+        "Redrawn samurai and oni",
+        "A deeper atmosphere in every world",
+        "Reworked sound effects"
+      ],
+      "ru": [
+        "Перерисованы самураи и они",
+        "Глубже атмосфера каждого мира",
+        "Переработаны звуковые эффекты"
+      ]
+    }
+  },
+  "ios": {
+    "enabled": false,
+    "latestVersion": "1.4.1",
+    "latestBuild": 8,
+    "minSupportedBuild": 1,
+    "forceUpdateEnabled": false,
+    "storeUrl": null,
+    "releaseNotes": {}
+  },
+  "settings": {
+    "reminderIntervalHours": 24,
+    "checkIntervalHours": 6,
+    "requestTimeoutSeconds": 5,
+    "maxCacheAgeHours": 24
+  }
+}

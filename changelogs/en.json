@@ -1,0 +1,15 @@
+{
+  "releases": [
+    {
+      "version": "1.4.1",
+      "build": 8,
+      "date": "2026-11-17",
+      "notes": [
+        "Clearer hints for touch controls",
+        "The run summary is no longer cut off on small screens",
+        "Achievements and the Sensei no longer speak over each other",
+        "The game fills the whole screen, edge to edge"
+      ]
+    }
+  ]
+}
